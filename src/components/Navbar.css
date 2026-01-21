@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* reduced horizontal padding */
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  box-sizing: border-box; /* ensure padding included in width */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0; /* prevents shrinking */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem; /* smaller gap to save space */
+  margin: 0;
+  padding: 0;
+  flex-wrap: nowrap; /* keep links in one line */
+  overflow-x: none; /* allow horizontal scroll if needed */
+}
+
+.navbar-links li a {
+  white-space: nowrap; /* prevent link text from wrapping */
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  background-color: rgba(255,255,255,0.2);
+}
+
+.navbar-links li a.active {
+  background-color: white;
+  color: #764ba2;
+  font-weight: 700;
+}

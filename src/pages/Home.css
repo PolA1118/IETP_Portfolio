@@ -1,0 +1,95 @@
+.home-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  padding: 2rem 4rem;
+}
+
+/* TABLE OF CONTENTS */
+.toc {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+  border-left: 3px solid #ddd;
+  padding-left: 1rem;
+}
+
+.toc h3 {
+  margin-bottom: 1rem;
+}
+
+.toc ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toc li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  color: #555;
+}
+
+/* MAIN CONTENT */
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* HERO */
+.hero img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+section {
+  scroll-margin-top: 80px;
+}
+
+/* KEY TAKEAWAYS */
+.key-takeaways {
+  background: #619cf3;
+  padding: 1.5rem;
+  border-left: 5px solid #1e88e5;
+  margin-bottom: 2rem;
+}
+
+.key-takeaways ul {
+  margin-left: 1rem;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 2rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.toc a {
+  text-decoration: none;
+  color: #444;
+}
+
+.toc a:hover {
+  color: #1e88e5;
+}
+
+.toc ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s, font-weight 0.3s, border-left 0.3s;
+  padding-left: 6px;
+  display: inline-block;
+}
+
+.toc ul li.active a {
+  color: #007bff; /* your highlight color */
+  font-weight: bold;
+  border-left: 3px solid #007bff;
+  padding-left: 10px;
+}

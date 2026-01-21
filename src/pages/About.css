@@ -1,0 +1,55 @@
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-title {
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+}
+
+.about-intro {
+  max-width: 750px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.member-card {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  padding: 1.2rem;
+  border-radius: 16px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.member-card h2 {
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+.member-card h4 {
+  margin: 0;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.member-card p {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.member-icon {
+  font-size: 2rem;
+}
